@@ -13,7 +13,7 @@
    --white: #FFFFFF;
    --lightslate: #8E8F99;
    --green: #31d0aa;
-   --navyblye-modal: rgba(46, 47, 66, 0.40);
+   --navyblue-modal: rgba(46, 47, 66, 0.40);
 }
 h1, h2, h3, h4, h5, h6 {
    margin: 0;
@@ -896,7 +896,7 @@ address a:focus {
    margin-bottom: 16px;
 }
 .input-subscribe {
-   background-color: var(--navyblue);
+   background-color: transparent;
    border-radius: 4px;
    border: 1px solid var(--white, #FFF);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -908,11 +908,12 @@ address a:focus {
    font-size: 12px;
    font-style: normal;
    font-weight: 400;
-   line-height: 24px;
+   line-height: 1.5;
    letter-spacing: 0.48px;
 }
 .input-subscribe::placeholder {
    color: var(--white);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
    font-size: 12px;
    font-style: normal;
    font-weight: 400;
@@ -945,13 +946,16 @@ address a:focus {
    background-color: var(--ocean);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
+.form-subscribe {
+   display: flex;
+   gap: 24px;
+}
 .modal-title {
    color: var(--navyblue);
    text-align: center;
    font-weight: 500;
    line-height: 1.5;
-   letter-spacing: 0.32px;
+   letter-spacing: 0.02em;
    margin-bottom: 16px;
 }
 .modal-form {
@@ -971,7 +975,7 @@ address a:focus {
    height: 40px;
    width: 100%;
    border-radius: 4px;
-   border: 1px solid var(--navyblye-modal);
+   border: 1px solid var(--navyblue-modal);
    background-color: transparent;
    padding-left: 38px;
    outline: transparent;
@@ -993,14 +997,15 @@ address a:focus {
 .modal-textarea {
    height: 120px;
    width: 100%;
-   border: 1px solid var(--navyblye-modal);
+   border: 1px solid var(--navyblue-modal);
    padding: 8px 16px;
    background-color: transparent;
    resize: none;
+   color: var(--navyblue-modal);
    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea::placeholder {
-   color: var(--navyblye-modal);
+   color: var(--navyblue-modal);
 }
 .modal-input:focus-within {
    border-radius: 4px;
@@ -1041,5 +1046,14 @@ input[type='checkbox']:checked + .text-modal .span-checkbox-icon {
    display: block;
    margin-bottom: 4px;
    font-size: 12px;
-   line-height: 1.16;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+   color: var(--lightslate);
+}
+.btn-text {
+   min-width: 169px;
+   display: flex;
+   justify-content: center;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
 }
