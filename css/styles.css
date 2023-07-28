@@ -1053,12 +1053,12 @@ input[type='checkbox']:checked + .text-modal .span-checkbox-icon {
    font-size: 12px;
    line-height: 1.17;
    letter-spacing: 0.04em;
-   color: var(--navyblue-modal);
+   color: var(--lightslate);
    border-radius: 4px;
    outline: transparent;
 }
 .btn-text {
-   min-width: 165px;
+   min-width: 169px;
    display: block;
    line-height: 1.5;
    letter-spacing: 0.04em;
