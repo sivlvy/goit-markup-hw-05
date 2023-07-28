@@ -1065,4 +1065,9 @@ input[type='checkbox']:checked + .text-modal .span-checkbox-icon {
 }
 .text-modal-area {
    color: var(--navyblue-modal);
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+   border-radius: 4px;
+   outline: transparent;
 }
